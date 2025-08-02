@@ -12,7 +12,7 @@ import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Slot } from "expo-router";
 import { images } from "@/constans";
-import CustomInput from "@/components/customInput";
+import CustomInput from "@/components/CustomInput";
 import CustomButton from "@/components/CustomButton";
 
 export default function _layout() {
@@ -38,7 +38,7 @@ export default function _layout() {
             className="self-center size-48 absolute -bottom-16 z-10"
           />
         </View>
-        <CustomInput />
+        <CustomInput placeholder="Enter your email" value="" onChangeText={()=>{}} label="Email" keyboardType="email-address"/>
         <CustomButton />
       </ScrollView>
       <Slot />
